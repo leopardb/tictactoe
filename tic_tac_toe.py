@@ -57,6 +57,7 @@ def playturn():
     chosencell = input(f"Turn {turn} -- ** {playername} ** choose a number between 1 and 9: ")
     numcell = int(chosencell)
     if not(numcell in range(1,10)) or cellisfull(numcell):
+        print("Please insert a valid cell number")
         return False
     else:
         # update board
@@ -95,10 +96,15 @@ def initgame():
     turn = 1
     currentplayer = False
     if initplayer():
-        while (not haswon(currentplayer) and turn <= 9):
+        while (turn <= 9):
             # play turn
-            if playturn():        
-                # switch player
+            while not playturn():
+                pass
+            # has current player won ?
+            if haswon(currentplayer):
+                break
+            else:
+                # otherwise switch player
                 currentplayer = not(currentplayer)
                 # increment turn
                 turn += 1
