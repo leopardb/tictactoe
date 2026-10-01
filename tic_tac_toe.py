@@ -102,6 +102,8 @@ def initgame():
                 pass
             # has current player won ?
             if haswon(currentplayer):
+                winner = "Player 2" if currentplayer else "Player 1"
+                print(f"********* {winner} won :D *********")
                 break
             else:
                 # otherwise switch player
@@ -110,10 +112,6 @@ def initgame():
                 turn += 1
         if (turn > 9):
             print("********* DRAW *********")
-        else:
-            winner = "Player 2" if currentplayer else "Player 1"
-            print(f"********* {winner} won :D *********")
-
 
 # Tic-tac-toe game
 if __name__ == "__main__":
