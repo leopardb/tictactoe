@@ -7,17 +7,11 @@
 - [ ] Zwei Personen können gegeneinander spielen.
 - [ ] Ein Spielfeld mit neun Feldern wird angezeigt und nach jedem Zug aktualisiert.
 - [ ] Spieler 1 wählt zu Beginn `X` oder `O`; Spieler 2 erhält das jeweils andere Symbol.
-- [ ] Die Spieler sind abwechselnd an der Reihe und geben die gewünschte Position über das Terminal ein.
+- [ ] Die Spieler sind abwechselnd an der Reihe und geben die gewünschte Position über das Terminal ein als Zahl [1-9].
 - [ ] Ein Zug setzt das Symbol des aktuellen Spielers auf die gewählte Position.
 - [ ] Nach jedem Zug wird geprüft, ob der aktuelle Spieler gewonnen hat: drei gleiche Symbole in einer der drei Reihen, drei Spalten oder zwei Diagonalen.
 - [ ] Bei einem Sieg wird der Gewinner angezeigt und das Spiel beendet.
 - [ ] Wenn alle neun Felder belegt sind und niemand gewonnen hat, wird ein Unentschieden angezeigt und das Spiel beendet.
-
-## Hinweise zur Umsetzung
-
-- [ ] Vor dem Programmieren wird der Spielablauf als Pseudocode oder Flussdiagramm geplant.
-- [ ] Der Code wird in kleine Funktionen mit aussagekräftigen Namen aufgeteilt, zum Beispiel für Spielfeldanzeige, Eingabe und Ergebnisprüfung. Alle Funktionen bleiben in `tic_tac_toe.py`.
-- [ ] Die Funktionen werden schrittweise umgesetzt und beim Entwickeln ausprobiert.
 
 ## Optionale Erweiterungen
 
